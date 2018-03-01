@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{username}}</ion-title>
+    <ion-title>{{userProfile?.name}}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,15 +15,17 @@
 
 <ion-content padding>
   <ion-card>
-    Avatar Place Holder
+    <ion-avatar item-start>
+      <img src="{{userProfile?.avatar}}">
+    </ion-avatar>
     <ion-card-content>
       <ion-card-title>
-        Company
+        {{userProfile?.company}}
       </ion-card-title>
-      <h4>Location</h4>
-      <h4>Email</h4>
+      <h4>{{userProfile?.location}}</h4>
+      <h4>{{userProfile?.email}}</h4>
       <p>
-        Bio
+        {{userProfile?.bio}}
       </p>
     </ion-card-content>
   </ion-card>
