@@ -31,7 +31,4 @@ export class ResultsPage {
     this.userProfile = this.users.find(user => this.username === user.name);
     console.log(this.userProfile);
   }
-  profileSelect() {
-    this.navCtrl.push("ProfilePage", { username: this.username });
-  }
 }

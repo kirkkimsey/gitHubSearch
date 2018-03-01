@@ -14,13 +14,5 @@
 
 
 <ion-content padding>
-  <ion-list>
-    <ion-item (click)="profileSelect()">
-      <ion-avatar item-start>
-        <img src="{{userProfile?.avatar}}">
-      </ion-avatar>
-      <h2>{{userProfile?.name}}</h2>
-      <p>{{userProfile?.company}}</p>
-    </ion-item>
-  </ion-list>
+  <app-searchresults [user]="userProfile"></app-searchresults>
 </ion-content>
